@@ -1,0 +1,120 @@
+*{margin: 0;
+padding: 0;}
+p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.btn{
+    padding: 15px 35px;
+    color: white;
+    border-radius: 40px;
+    font-size: 18px;
+    border-color: transparent;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    height: 10vh;
+    padding:10px 100px; 
+    background-color: rgba(232, 220, 220, 0.487);
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav-left{
+    display: flex;
+   
+}
+.nav-left img{
+        width: 86.041px;
+        height: 40px;
+        flex-shrink: 0;
+        margin-right: 30px;
+}
+
+.nav-left-text{
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+}
+.nav-right ul{
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav-right a{
+    text-decoration: none;
+    margin-right: 40px;
+    color: #3C354F;;
+}
+.banner{
+    height:90vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.banner-text{
+    margin-left:200px;
+}
+.banner-text h3 {
+    font-size: 48px;
+    font-weight: 600;
+}
+.banner-img{
+    width: 800px;
+    margin-top:px;
+}
+.banner-img img{
+    width: 100%;
+}
+.banner-btn{
+    display: inline-flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+.banner-btn1{
+    background-color: red;
+}
+.banner-btn2{
+    background-color: aquamarine;
+}
+/* media screen for mobile */
+@media screen and (max-width:576px) {
+    /* header  */
+    header{
+        width: 100%;
+    }
+    nav{
+        flex-direction: column;
+        height: 25vh;
+        padding-top: 40px; 
+        background-color: rgba(192, 196, 175, 0.115);     
+    }
+    .nav-right ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-right li {
+        margin-top: 20px;
+        font-size: 25px;
+        padding:5px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        background-color: rgb(227, 248, 252);
+    }
+    .banner-img{
+        width: 400px;
+    }
+    .banner-text{
+        margin: auto;
+    }
+
+
+}
