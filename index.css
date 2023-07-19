@@ -159,8 +159,41 @@ nav{
             left: 200px;          
         }
         .s2sub img {
-            width: 300px;
+            width: 300px;  
+        }
+        .section-3{
+            display: flex;
+            height: 40vh;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin: auto;
+            flex-wrap: wrap;
+            column-gap:70px ;
           
+        }
+        .gi{
+            border: 1px solid transparent;
+            background-color: aliceblue;
+            border-radius: 20px;
+            padding: 5px;
+            display: flex;
+            text-align: center;
+            justify-content: center;  
+            align-items: center;       
+        }
+        .gi a{
+           
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            padding: 10px;
+         
+          
+        }
+        .gi img{
+            width: 40px;        
+          right: 4px;           
         }
 
 /* media screen for mobile */
@@ -216,7 +249,8 @@ nav{
     .section-2{
         flex-direction: column;
         height: 120vh;
-        background-color: aquamarine;
+        background-color: rgba(206, 190, 249, 0.327);
+        border-radius: 20px;
         
     }
     .section-2text{
@@ -242,5 +276,22 @@ nav{
        bottom: 100px;
        right: 100px;
     }
+        /* section-3 */
+
+    .section-3{
+        background-color: rgb(255, 255, 255);
+        height: 40vh;
+        margin-top: 40px;
+        column-gap: 20px;
+        width: 100%;
+       text-align: center;
+        flex-wrap: wrap;
+        border-radius: 20px;
+    }
+          .gi img {
+              width: 30px;
+              right: 4px;
+          }
+                
 
 }
