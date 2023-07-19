@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:ital,wght@0,600;0,800;1,400&family=Work+Sans:wght@400;600;700;800&display=swap');
+
 *{margin: 0;
-padding: 0;}
+padding: 0;
+font-family: 'Work Sans', sans-serif;
+}
 p{
     font-size: 20px;
     font-weight: 500;
+    color: #534C64;
 }
 .btn{
     padding: 15px 35px;
@@ -84,9 +89,12 @@ nav{
 .banner-btn2{
     background-color: aquamarine;
 }
-/* section-1  */
+
+            /* section-1  */
+
 .section-1{
-    background-color: rgba(239, 249, 203, 0.278);
+    /* background-color: rgba(239, 249, 203, 0.278); */
+
     height: 70vh;
     padding-top: 50px;
     width: 80%;
@@ -116,10 +124,44 @@ nav{
     justify-content: space-between;
     border-radius: 16px;
     padding: 20px;
-    margin-top: 40px;
-    
+    margin-top: 40px;   
 }
+           /* section-2 */
 
+        .section-2{
+            display: flex;
+            justify-content:center;
+            height: 80vh;
+            max-width: 80%;
+            margin: auto;
+            text-align: center;
+            align-items: center;
+            background-color:rgba(255, 255, 255, 0.487);
+        }
+        
+        .section-2text h3{
+                    font-size: 48px;
+                    font-weight: 700;
+           }
+        .section-2text p{
+                margin-top: 30px;
+        }
+           .sec-2img{
+            width: 800px;
+            display: flex;
+           }
+           .sec-2img img{
+            width: 100%;
+           }
+        .s2sub{
+            position: relative;
+             top: 280px;
+            left: 200px;          
+        }
+        .s2sub img {
+            width: 300px;
+          
+        }
 
 /* media screen for mobile */
 @media screen and (max-width:576px) {
@@ -129,18 +171,20 @@ nav{
     }
     nav{
         flex-direction: column;
-        height: 25vh;
+        height: 30vh;
         padding-top: 40px; 
         background-color: rgba(192, 196, 175, 0.115);     
     }
     .nav-right ul{
         flex-direction: column;
         align-items: center;
+        text-align: center;
+        padding: 10px;
     }
     .nav-right li {
         margin-top: 20px;
         font-size: 25px;
-        padding:5px;
+        
     }
     .banner{
         flex-direction: column-reverse;
@@ -154,23 +198,49 @@ nav{
     }
     /* section-1 */
     .section-1{
-        margin-top: 180px;
+        margin-top: 200px;
         height: auto;
         justify-content: center;
         background-color: transparent;
     }
     .section1-img{
-        flex-direction: column;
-       
-         
-    }
-    
+        flex-direction: column;              
+    }   
     .section1-img p{
         padding: 20px;
         font-size: 16px;
         color: #534C64;
-        text-align: center;
-       
+        text-align: center;      
+    }
+    /*  section-2 */
+    .section-2{
+        flex-direction: column;
+        height: 120vh;
+        background-color: aquamarine;
+        
+    }
+    .section-2text{
+        margin-bottom:150px;
+    }
+    .sec-2img{      
+         justify-content: center;
+         width: 340px;
+         margin-right: 120px;
+        
+    }
+       .s2main{
+        width: 370px;
+       }
+      .s2main img{
+        width: 270px;
+      
+      }  
+    
+    .s2sub img{
+        position: relative;
+       width: 140px;
+       bottom: 100px;
+       right: 100px;
     }
 
 }
